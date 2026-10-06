@@ -1,0 +1,12 @@
+﻿{
+  "name": "campusmate-ai",
+  "version": "1.0.0",
+  "description": "Simple local Ollama chatbot",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

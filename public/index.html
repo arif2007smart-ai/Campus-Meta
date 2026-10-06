@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampusMate AI</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>CampusMate AI</h1>
+      </div>
+      <span id="status" class="status" data-state="checking" role="status">
+        <span class="dot"></span>
+        <span id="statusLabel">Checking AI...</span>
+      </span>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite" aria-label="Chat messages"></section>
+
+    <form id="chatForm" class="composer">
+      <textarea id="messageInput" rows="1" placeholder="Ask anything in English, Tamil or Tanglish..." autocomplete="off" aria-label="Message" required></textarea>
+      <div class="composer-actions">
+        <button id="stopButton" class="stop-button" type="button" disabled>Stop</button>
+        <button id="sendButton" type="submit" aria-label="Send message">➤</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
